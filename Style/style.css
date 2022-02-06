@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+
+#LeftSecHomeView h1{
+    color: white;
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+    padding-top: 2%;
+    font-size: 40px;
+}
+
+
+
+
+
+    /* MOBILE  */
+@media only screen and (max-width: 800px) {
+    #LeftSecHomeView{
+        width: 100%;
+        background-color:#27966E;
+        height: 10vh;
+        overflow: hidden;
+        float: left;
+    }
+    #RightSecHomeView{
+        float:right; width:100%;
+        position: absolute;
+        top: 10%;
+        background-color:#27966E;
+    }
+    #LeftSecHomeView img{
+         display: none; 
+     }
+    #RightSecHomeView nav{
+        display:none;
+    }
+    #searchEngine{
+        background-color: #27966E;
+    }  
+    #searchEngine h2{
+        text-align: center;
+        font-family: 'Red Hat Text', sans-serif;
+        font-weight: 900;
+        padding:5%;
+
+    }
+    #searchEngine h3{
+        font-family: 'Red Hat Text', sans-serif;
+        padding:1%;
+    }
+    #searchEngine #BikeCategories{
+            margin:2%;
+            width:90%;
+            height:40px;
+            border-radius: 10px;
+            border:none;
+            outline: none;
+    }
+    #searchEngine #BikeName{
+                margin:2%;
+                width:90%;
+                height:40px;
+                border-radius: 10px;
+                border: none;
+                font-size: 20px;
+        }
+    #searchEngine #BikeName:focus{
+               outline: none;
+                border: none;
+        }
+    #searchEngine #Searchbtn{
+               margin-left: 40%; margin-top: 5%;margin-bottom: 5%;
+
+                background-color: white;
+                border-radius: 10px;
+                width:120px;
+                height:50px;
+                background-image: url('../Assets/icons8-search-30.png');
+                background-repeat: no-repeat;
+                background-position-x: 10px;
+                background-position-y: 10px;
+                border:none;
+                font-family: 'Red Hat Text', sans-serif;
+                font-weight: bold;
+                text-align: end;
+                font-size: 15px;
+        } 
+       
+        
+ 
+  }
+ 
+
+
+
+
+
+
+          /* WEB  */
+
+@media only screen and (min-width: 800px) {
+    #LeftSecHomeView{
+        width: 25%;
+        background-color:#27966E;
+        height: 100vh;
+    }
+    #LeftSecHomeView img{
+        /* display: none; */
+        width: 700px;
+        margin: 14%;
+    }
+    #RightSecHomeView{
+        float:right; width:70%; margin-left:0px;
+        position: absolute;
+        top: 2%;
+        left: 30%;
+    }
+    #RightSecHomeView li{
+       display:inline-flex;
+       margin-left: 8%;
+       font-family: 'Red Hat Text', sans-serif;
+       font-weight: bold;
+       font-size: 18px;
+    }
+    #RightSecHomeView a {
+        
+            text-decoration: none;
+            color: #27966E;
+     
+    }
+    #RightSecHomeView a:hover {
+        
+        animation: moving 1s infinite; 
+        -webkit-animation: moving 1s infinite; 
+        position:relative;
+    }
+    @keyframes moving {
+        from {top: 0px;}
+        to {bottom: 10px;}
+    }
+    @-webkit-keyframes moving {
+           from {top: 0px;}
+        to {bottom: 10px;}
+    }
+    
+    #searchEngine{
+        background-color: #27966E;
+        width: 400px;
+        position:absolute;
+        right: 15%;
+        top: 100px;
+        height:370px;
+        border-radius: 10%;
+    }  
+    #searchEngine h2{
+        text-align: center;
+        font-family: 'Red Hat Text', sans-serif;
+        font-weight: 900;
+        padding:5%;
+
+    }
+    #searchEngine h3{
+        font-family: 'Red Hat Text', sans-serif;
+        padding:1%;
+    }
+    #searchEngine #BikeCategories{
+            margin:2%;
+            width:90%;
+            height:40px;
+            border-radius: 10px;
+            border:none;
+            outline: none;
+    }
+    #searchEngine #BikeName{
+                margin:2%;
+                width:90%;
+                height:40px;
+                border-radius: 10px;
+                border: none;
+                font-size: 20px;
+        }
+    #searchEngine #BikeName:focus{
+               outline: none;
+                border: none;
+        }
+    #searchEngine #Searchbtn{
+               margin-left: 40%; margin-top: 10%;
+                background-color: white;
+                border-radius: 40px;
+                width:50px;
+                height:50px;
+                background-image: url('../Assets/icons8-search-30.png');
+                background-repeat: no-repeat;
+                background-position-x: 10px;
+                background-position-y: 10px;
+                color: transparent;
+                border:none
+
+        } #searchEngine #Searchbtn:hover{
+               margin-left: 40%; margin-top: 10%;
+                background-color: black;
+                border-radius: 40px;
+                width:120px;
+                height:50px;
+                background-image: url('../Assets/icons8-search-30\ \(3\).png');
+                background-repeat: no-repeat;
+                background-position-x: 10px;
+                background-position-y: 10px;
+                color: #27966E;
+                font-family: 'Red Hat Text', sans-serif;
+                font-weight: bold;
+                text-align: end;
+                font-size: 15px;
+                 transition:.6s ease;
+                border:none
+
+        }
+        #activeimage{
+            display:none;
+        }
+        #title{
+           width: 30%; 
+           text-align:center;
+           padding: 2%;
+           height: 30px;
+           background-color:#27966E ;
+           border-radius: 30px;
+           margin-left: 40%;
+           margin-top: 3%;
+           font-family: 'Red Hat Text', sans-serif;
+                font-weight:900;
+
+        }
+
+
+
+
+  }
